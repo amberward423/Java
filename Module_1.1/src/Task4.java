@@ -13,7 +13,10 @@ public class Task4 {
         // Create an instance of the Cat class with a name
         Task4 cat = new Task4("Whiskers");
 
+        Task4 cat2 = new Task4("Oona");
+
         // Call the meow method on the cat instance
         cat.meow();
+        cat2.meow();
     }
 }
