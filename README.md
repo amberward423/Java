@@ -1,24 +1,44 @@
-# Fall Semester 2026 – Java Object-Oriented Programming
+# Java Coursework
 
-This repository contains assignments and coursework for my **Fall Semester Java Object-Oriented Programming (OOP) class**.
+This repository contains my Java programming coursework, organized by module and task. Each module has its own folder on the `main` branch, making it easy to find and track my progress throughout the course.
 
-## Repository Structure
+## Project Structure
 
-Each assignment will be organized in its own Git branch to keep the work separate and organized.
+```text
+Java/
+└── hello_world/
+    ├── README.md
+    ├── src/
+    │   └── Main.java
+    └── Module_1.1/
+        └── src/
+            ├── Main.java
+            └── Task2.java
+```
 
-- **`main`** – Main branch for the repository.
-- **Assignment branches** – Each assignment will have its own branch containing the relevant code and files.
+## Modules
 
-## Branch Naming Convention
+### Module 1.1
 
-Branches will be named according to the assignment they contain.
+Contains Java exercises and assignments completed as part of Module 1.1.
 
-Examples:
-- `assignment-1`
-- `assignment-2`
-- `assignment-3`
+- `Main.java` — Main Java exercise for the module.
+- `Task2.java` — Task 2 implementation.
+
+More modules and tasks will be added as the course progresses.
+
+## Technologies
+
+- Java
+- Git and GitHub
+- IntelliJ IDEA
+
+## Version Control
+
+Coursework is organized into module folders on the `main` branch rather than using separate branches for individual modules.
+
+Changes are tracked with Git and pushed to GitHub to maintain an updated record of coursework and progress.
 
 ## Purpose
 
-This repository is used to track my progress throughout the semester, practice Java programming and object-oriented programming concepts, and keep each assignment organized using Git version control.
-
+This repository serves as a collection of my Java coursework, practice exercises, and assignments throughout my software engineering studies.
