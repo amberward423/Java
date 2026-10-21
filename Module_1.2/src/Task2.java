@@ -15,7 +15,7 @@ public class Task2 {
         double third = Math.sqrt((first*first)+(second*second));
 
 
-        System.out.println("The length of the hypotenuse is " + third);
+        System.out.printf("The length of the hypotenuse is %02f", third);
 
 
 
