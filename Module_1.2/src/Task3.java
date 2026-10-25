@@ -5,16 +5,17 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a weight in grams:  ");
+        System.out.print("Enter a weight in grams:  ");
+
         int grams = Integer.parseInt(scanner.nextLine());
 
-        int talents = (grams / 9071);
+        int talents = grams / 907;
 
-        int pounds = (grams /453);
+        int pounds = grams /453;
 
-        double lot = (grams / 13.28);
+        float lot = grams /13.28f;
 
-        System.out.println( grams + " grams is " + talents + " talents, "+ pounds+ " pounds, "+ lot + " lots.");
+        System.out.printf(" %d grams is %d talents, %d pounds, %4.2f lots.", grams,talents,pounds, lot);
 
     }
 }
