@@ -5,20 +5,25 @@ public class Task3 {
         Scanner scanner = new Scanner(System.in);
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
         int num1 = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Enter a number: ");
+        System.out.print("Enter a number: ");
         int num2 = Integer.parseInt(scanner.nextLine());
 
-        for (int i = num1; i <= num2; i++){
-            if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0 || i % 7 == 0){
-                System.out.println ("This is not a prime number.");
+        for (int i = num1; i <= num2; i++) {
+            boolean isPrime = true;
+            if (i < 2) {
+                isPrime = false;
             }
-            else{
-                System.out.println ("This is a prime number.");
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime == true) {
+                System.out.println(i);
             }
         }
-
     }
 };
