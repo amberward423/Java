@@ -9,10 +9,30 @@ public class Task3 {
 
         int[] num = new int[size];
 
+        int[] unique = new int[size];
+        int count = 0;
+
         System.out.println("Enter the integers:");
 
         for (int i = 0; i < size; i++) {
-            num[i] = scanner.nextInt();
+            num[i]= scanner.nextInt();
+        }
+        for (int i = 0; i < size; i++) {
+            boolean match = false;
+            for (int j = 0; j < count; j++) {
+                if (num[i] == unique[j]) {
+                    match = true;
+                }
+
+            }
+            if(match == false){
+                unique[count]=num[i];
+                count += 1;
+
+            }
+        }
+        for(int i = 0; i < count; i++){
+            System.out.println(unique[i]);
         }
     }
-};
+}
