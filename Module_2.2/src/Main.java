@@ -9,6 +9,21 @@ public class Main {
         manager.removeItem("Bread");
         manager.displayList();
         System.out.println("Do you have Bread in the list : " + manager.checkItem(" Bread"));
+        manager.addItem("Bread",1.99);
+        manager.addItem("Milk",2.89);
+        manager.addItem("Ground Beef",8.99);
+        manager.calculateTotalCost();
+        System.out.print("Cost of Items on your list: " + manager.calculateTotalCost() + " euros.");
+        manager.addItem("Pulla",3.00,"baked goods");
+        manager.addItem("Ground Beef",8.99,"Meat");
+        manager.addItem("Bread",1.99, "baked goods");
+        manager.addItem("Milk",2.89,"Dairy");
+        manager.displayByCategory("baked goods");
+
+
+
+
+
     }
 
 }
