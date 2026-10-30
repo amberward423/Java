@@ -22,7 +22,7 @@ Java/
 
 Contains Java exercises and assignments completed as part of Module 1.1.
 
-- `Main.java` — Main Java exercise for the module.
+- `GroceryListManager.java` — Main Java exercise for the module.
 - `Task2.java` — Task 2 implementation.
 
 More modules and tasks will be added as the course progresses.
