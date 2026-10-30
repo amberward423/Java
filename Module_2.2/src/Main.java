@@ -19,6 +19,13 @@ public class Main {
         manager.addItem("Bread",1.99, "baked goods");
         manager.addItem("Milk",2.89,"Dairy");
         manager.displayByCategory("baked goods");
+        manager.addItem("Apples",2.00,"Fruit", 6);
+        manager.addItem("Oranges",2.00,"Fruit", 0);
+        manager.updateQuantity("Oranges",4);
+        manager.displayAvailableItems();
+
+
+
 
 
 

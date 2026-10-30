@@ -6,6 +6,8 @@ public class GroceryListManager {
     private ArrayList<String> groceryList = new ArrayList<>();
     private HashMap<String, Double> prices = new HashMap<>();
     private HashMap<String, String> categories = new HashMap<>();
+    private HashMap<String,Integer> quantities = new HashMap<>();
+
 
     void addItem(String item) {
         groceryList.add(item);
@@ -20,7 +22,24 @@ public class GroceryListManager {
         groceryList.add(item);
         prices.put(item, cost);
     }
+    void addItem(String item, double cost, String category,int quantity) {
+        groceryList.add(item);
+        prices.put(item, cost);
+        quantities.put(item,quantity);
+        categories.put(item,category);
 
+    }
+    void updateQuantity(String item, int newQuantity){
+        quantities.put(item,newQuantity);
+    }
+
+    void displayAvailableItems(){
+        for (int i = 0; i < groceryList.size(); i++) {
+            if (quantities.get(groceryList.get(i)) != null && quantities.get(groceryList.get(i))  > 0 ){
+                System.out.println(groceryList.get(i));
+            }
+        }
+    }
     void removeItem(String item) {
         groceryList.remove(item);
     }
