@@ -9,10 +9,10 @@ Java/
 └── hello_world/
     ├── README.md
     ├── src/
-    │   └── Main.java
+    │   └── Book.java
     └── Module_1.1/
         └── src/
-            ├── Main.java
+            ├── Book.java
             └── Task2.java
 ```
 
@@ -22,7 +22,7 @@ Java/
 
 Contains Java exercises and assignments completed as part of Module 1.1.
 
-- `GroceryListManager.java` — Main Java exercise for the module.
+- `GroceryListManager.java` — Book Java exercise for the module.
 - `Task2.java` — Task 2 implementation.
 
 More modules and tasks will be added as the course progresses.
