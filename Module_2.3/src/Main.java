@@ -28,7 +28,9 @@ public class Main {
         System.out.println(myLibrary.isBookAvailable("Cat in the Hat"));
         System.out.println(myLibrary.isBookAvailable("Harry Potter"));
 
-
+        book1.setRating(4.5);
+        book1.addReview("Best book I have ever read");
+        System.out.println(book1.getRating());
 
     }
 

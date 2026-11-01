@@ -1,5 +1,7 @@
+import java.util.ArrayList;
 
 public class Book {
+    private ArrayList<String> reviews = new ArrayList<>();
 
     private String title;
     private String author;
@@ -26,6 +28,12 @@ public class Book {
     void setRating(double rating){
         this.rating = rating;
     }
+    void addReview(String review) {
+        reviews.add(review);
 
+    }
 
+    double getRating(){
+        return rating;
+    }
 }
