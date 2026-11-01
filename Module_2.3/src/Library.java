@@ -24,4 +24,15 @@ public class Library {
             }
         }
     }
+    void borrowBook(String title) {
+        for (int i = 0; i < books.size(); i++) {
+            if (books.get(i).getTitle() != null && books.get(i).getTitle().equals(title)) {
+                books.remove(i);
+                break;
+            }
+        }
+    }
+    void returnBook(Book book){
+        books.add(book);
+    }
 }

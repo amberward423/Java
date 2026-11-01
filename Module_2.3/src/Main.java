@@ -18,6 +18,16 @@ public class Main {
         myLibrary.addBook(book2);
         myLibrary.displayBooks();
         myLibrary.findBooksByAuthor("Dr.Suess");
+
+        myLibrary.borrowBook("Cat in the Hat");
+        myLibrary.displayBooks();
+
+        myLibrary.returnBook(book1);
+        myLibrary.displayBooks();
+
+
+
+
     }
 
     }
