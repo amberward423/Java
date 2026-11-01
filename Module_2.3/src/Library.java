@@ -48,5 +48,12 @@ public class Library {
         }
         return false;
     }
+
+double  getAverageBookRating(){
+
 }
+}
+
+
+
 
