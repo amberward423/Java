@@ -25,6 +25,8 @@ public class Main {
         myLibrary.returnBook(book1);
         myLibrary.displayBooks();
 
+        System.out.println(myLibrary.isBookAvailable("Cat in the Hat"));
+        System.out.println(myLibrary.isBookAvailable("Harry Potter"));
 
 
 
