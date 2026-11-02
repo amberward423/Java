@@ -49,9 +49,30 @@ public class Library {
         return false;
     }
 
-double  getAverageBookRating(){
-
-}
+    double getAverageBookRating() {
+        double x = 0;
+        if (books.isEmpty()) {
+            return 0;
+        }
+        for (int i = 0; i < books.size(); i++) {
+           x += books.get(i).getRating();
+        }
+       return  x/books.size();
+    }
+     Book getMostReviewedBook(){
+         if (books.isEmpty()) {
+             return null;
+         }
+        int review = books.get(0).getReviewCount();
+        Book  mostReviewedBook = books.get(0);
+        for (int i = 1; i < books.size(); i++) {
+            if(books.get(i).getReviewCount() > review){
+                review  = books.get(i).getReviewCount() ;
+                mostReviewedBook = books.get(i);
+            }
+        }
+         return mostReviewedBook;
+     }
 }
 
 

@@ -36,4 +36,13 @@ public class Book {
     double getRating(){
         return rating;
     }
+    int getReviewCount(){
+        return reviews.size();
+    }
+
+
+
+
 }
+
+
