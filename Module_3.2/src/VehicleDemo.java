@@ -6,6 +6,7 @@ public class VehicleDemo {
         Bus myBus;
         myBus = new Bus("Honda");
 
+
         Motorcycle myMotorcycle;
         myMotorcycle = new Motorcycle("Ford");
 
@@ -16,6 +17,22 @@ public class VehicleDemo {
         System.out.println(myCar.getInfo());
         System.out.println(myBus.getInfo());
         System.out.println(myMotorcycle.getInfo());
+
+        ElectricCar myElectricCar;
+        myElectricCar = new ElectricCar("Tesla");
+
+        myElectricCar.start();
+        System.out.println(myElectricCar.getInfo());
+        myElectricCar.charge();
+
+
+        ElectricMotorcycle myElectricMotorcycle;
+        myElectricMotorcycle = new ElectricMotorcycle("Honda Ebike");
+
+        myElectricMotorcycle.start();
+        System.out.println(myElectricMotorcycle.getInfo());
+        myElectricMotorcycle.charge();
+
 
     }
 }

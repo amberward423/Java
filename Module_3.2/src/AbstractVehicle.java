@@ -1,4 +1,4 @@
-public abstract class AbstractVehicle implements Vehicle {
+public abstract class AbstractVehicle implements Vehicle,ElectricVehicle {
     private String brand;
 
     public AbstractVehicle(String brand){
@@ -8,4 +8,8 @@ public abstract class AbstractVehicle implements Vehicle {
         return brand;
     }
 
+    @Override
+   public void charge(){
+        System.out.println("This vehicle cannot be charged.");
+    }
 }
