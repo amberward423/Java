@@ -1,4 +1,4 @@
-public class Motorcycle implements Vehicle {
+public class Motorcycle extends AbstractVehicle {
     @Override
     public void start() {
         System.out.println("Motorcycle is starting.");
@@ -13,6 +13,9 @@ public class Motorcycle implements Vehicle {
 
     @Override
     public String getInfo() {
-        return "This is a motorcycle.";
+        return "This is a motorcycle. It is a " + getBrand();
+    }
+    public Motorcycle(String brand){
+        super(brand);
     }
 }

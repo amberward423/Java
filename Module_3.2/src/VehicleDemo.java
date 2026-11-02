@@ -1,13 +1,13 @@
 public class VehicleDemo {
     public static void main(String[] args) {
         Car myCar;
-        myCar = new Car();
+        myCar = new Car("Toyota");
 
         Bus myBus;
-        myBus = new Bus();
+        myBus = new Bus("Honda");
 
         Motorcycle myMotorcycle;
-        myMotorcycle = new Motorcycle();
+        myMotorcycle = new Motorcycle("Ford");
 
         myCar.start();
         myBus.start();

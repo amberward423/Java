@@ -1,4 +1,4 @@
-public class Car implements Vehicle{
+public class Car extends AbstractVehicle{
     @Override
     public void start() {
         System.out.println("Car is starting");
@@ -12,6 +12,9 @@ public class Car implements Vehicle{
 
     @Override
     public String getInfo() {
-        return "This is a car.";
+        return "This is a car. It is a " + getBrand();
+    }
+    public Car(String brand){
+        super(brand);
     }
 }
