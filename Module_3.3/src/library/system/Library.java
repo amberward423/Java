@@ -14,7 +14,7 @@ public class Library {
     }
 
     void returnBook(Book book) {
-        books.remove(book);
+        books.add(book);
 
     }
 
@@ -26,5 +26,9 @@ public class Library {
     void removeMember(LibraryMember member) {
         members.remove(member);
 
+    }
+    void borrowBook(LibraryMember member,Book book){
+         member.borrowBook(book);
+         books.remove(book);
     }
 }
