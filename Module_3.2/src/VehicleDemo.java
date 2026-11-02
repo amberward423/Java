@@ -33,6 +33,11 @@ public class VehicleDemo {
         System.out.println(myElectricMotorcycle.getInfo());
         myElectricMotorcycle.charge();
 
+        myCar.setFuelEfficiency(15.5);
+        System.out.println(myCar.calculateFuelEfficiency());
+
+
+
 
     }
 }

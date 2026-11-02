@@ -1,5 +1,6 @@
 public interface Vehicle {
     void start();
     void stop();
-   String getInfo();
+    String getInfo();
+    double calculateFuelEfficiency();
 }
