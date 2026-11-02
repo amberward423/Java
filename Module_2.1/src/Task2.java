@@ -95,6 +95,14 @@ public class Task2 {
                 }
             }
         }
+        void gasConsumption(double amount){
+            if (amount > 0)
+                gasolineLevel = Math.max(0, gasolineLevel - amount);
+            else
+                gasolineLevel = 0;
+
+        }
+
     }
 
 

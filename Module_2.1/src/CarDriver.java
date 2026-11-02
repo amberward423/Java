@@ -1,9 +1,11 @@
 public class CarDriver {
     public static void main(String[] args) {
         Task2 myCar;
+        SportsCar mySportsCar;
 
         myCar = new Task2("Toyota Corolla");
         myCar.fillTank();
+        mySportsCar = new SportsCar("Porsche");
 
         for (int i = 0; i < 6; i++) {
             myCar.accelerate(15);
@@ -27,6 +29,17 @@ public class CarDriver {
         System.out.println(myCar.isOn() + " Cruise control is off.");
         System.out.println(myCar.getTypeName() + ": speed is " + myCar.getSpeed() + " km/h");
         myCar.isOn();
+
+        mySportsCar.fillTank();
+        mySportsCar.accelerate(10);
+        System.out.println(mySportsCar.getTypeName() + ": speed is " + mySportsCar.getSpeed() + " km/h");
+        mySportsCar.decelerate(10);
+        System.out.println(mySportsCar.getTypeName() + ": speed is " + mySportsCar.getSpeed() + " km/h");
+        mySportsCar.gasConsumption(30);
+        mySportsCar.getGasolineLevel();
+        System.out.println(mySportsCar.getTypeName() + " gasoline level is : " + mySportsCar.getGasolineLevel());
+
+
     }
     }
 
