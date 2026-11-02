@@ -2,10 +2,19 @@ import java.util.ArrayList;
 
 public class Library {
     private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<User> users = new ArrayList<>();
 
     void addBook(Book book) {
         books.add(book);
 
+    }
+
+    void addUser(User user){
+        users.add(user);
+    }
+
+    void removeUser(User user){
+        users.remove(user);
     }
 
     void displayBooks() {
@@ -73,6 +82,11 @@ public class Library {
         }
          return mostReviewedBook;
      }
+
+     User findUser(String name){
+
+     }
+
 }
 
 
