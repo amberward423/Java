@@ -8,17 +8,17 @@ public class Library {
     private ArrayList<LibraryMember> members = new ArrayList<>();
     private ArrayList<Book> books = new ArrayList<>();
 
-    void addBook(Book book) {
+    public void addBook(Book book) {
         books.add(book);
 
     }
 
-    void returnBook(Book book) {
+    public void returnBook(LibraryMember member, Book book) {
         books.add(book);
-
+        member.returnBook(book);
     }
 
-    void addMember(LibraryMember member) {
+    public void addMember(LibraryMember member) {
         members.add(member);
 
     }
@@ -27,8 +27,16 @@ public class Library {
         members.remove(member);
 
     }
-    void borrowBook(LibraryMember member,Book book){
-         member.borrowBook(book);
-         books.remove(book);
+    public void borrowBook(LibraryMember member, Book book){
+         if(books.contains(book)){
+            member.borrowBook(book);
+            books.remove(book);
+        }
     }
-}
+   public int getAvailableBook(){
+        return books.size();
+        }
+   }
+
+
+

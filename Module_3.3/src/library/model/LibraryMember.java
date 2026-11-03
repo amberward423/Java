@@ -17,11 +17,11 @@ public class LibraryMember {
     public int getMemberID(){
         return memberID;
     }
-    void borrowBook(Book book) {
+    public void borrowBook(Book book) {
         borrowedBooks.add(book);
 
     }
-    void returnBook(Book book) {
+    public void returnBook(Book book) {
         borrowedBooks.remove(book);
 
     }
