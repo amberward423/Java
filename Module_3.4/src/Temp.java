@@ -17,20 +17,42 @@ public class Temp {
             String[] headers = headerLine.split(";");
             int ulkoTaloIndex;
             ulkoTaloIndex = -1;
+            int Aika;
+            Aika = -1;
             for (int i = 0; i < headers.length; i++) {
                 if (headers[i].equals("UlkoTalo")) {
                     ulkoTaloIndex = i;
                     break;
                 }
+                if (headers[i].equals("Aika")) {
+                    Aika = i;
+                }
             }
+
             if (ulkoTaloIndex == -1) {
                 System.out.println("There is an error");
                 return;
             }
-
-            while ((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
+            if (Aika == -1) {
+                System.out.println("There is an error");
+                return;
             }
+            double tempTotal = 0;
+            int measurementCount = 0;
+            while ((line = bufferedReader.readLine()) != null) {
+                String[] values = line.split(";");
+                System.out.println(values[Aika]);
+                if(values[Aika].startsWith("01.01.2023")){
+                    double temperature =   Double.parseDouble(values[ulkoTaloIndex].replace(",","."));
+                    tempTotal += temperature;
+                    measurementCount ++;
+                }
+            }
+            bufferedReader.close();
+
+            double average = tempTotal/measurementCount;
+            System.out.println(average);
+            System.out.println(measurementCount);
         }catch (IOException e) {
             throw new RuntimeException(e);
         }
