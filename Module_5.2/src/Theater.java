@@ -9,9 +9,10 @@ public class Theater {
         else{
             System.out.println("Reservation failed.");
         }
-
     }
-    public int getSeats(){
+
+    public synchronized int getSeats(){
         return seats;
     }
+
 }

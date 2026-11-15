@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         Theater theater = new Theater();
@@ -7,6 +6,32 @@ public class Main {
         Customer customer = new Customer(theater, 56);
         Customer customer2 = new Customer(theater, 45);
         Customer customer3 = new Customer(theater, 5);
+
+        ThreadSafeList threadSafeList = new ThreadSafeList();
+        ListTest test1 = new ListTest(threadSafeList);
+        ListTest test2 = new ListTest(threadSafeList);
+        ListTest test3 = new ListTest(threadSafeList);
+
+        test1.start();
+        test2.start();
+        test3.start();
+
+        try {
+            test1.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            test2.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            test3.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(threadSafeList.size());
 
         customer.start();
 
