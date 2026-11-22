@@ -1,0 +1,7 @@
+.root{
+    -fx-font-family: "sans-serif";
+}
+.button{
+    -fx-background-color: #F8C8DC;
+    -fx-text-fill:#000000 ;
+}
