@@ -1,4 +1,6 @@
 package currencyconverter;
+import currencyconverter.entity.Currency;
+
 import java.util.ArrayList;
 public class CurrencyConverter {
     private ArrayList<Currency> currencies = new ArrayList<Currency>();

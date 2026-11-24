@@ -1,6 +1,8 @@
 
 package currencyconverter;
 
+import currencyconverter.application.CurrencyConverterController;
+import currencyconverter.entity.Currency;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.ComboBox;
@@ -10,7 +12,6 @@ import javafx.scene.control.Label;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 
 public class CurrencyConverterView {
     private TextField amountField;

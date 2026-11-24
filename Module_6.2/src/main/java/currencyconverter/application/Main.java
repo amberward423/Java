@@ -1,4 +1,5 @@
-package currencyconverter;
+package currencyconverter.application;
+import currencyconverter.CurrencyConverterView;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

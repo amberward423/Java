@@ -1,4 +1,4 @@
-package currencyconverter;
+package currencyconverter.entity;
 
 public class Currency {
   private String abbreviation;
